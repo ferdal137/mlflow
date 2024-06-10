@@ -1,5 +1,5 @@
 # MLflow
-Este repositorio contiene proyectos de Machine Learning utilizando MLflow para gestionar los ciclos de vida de los modelos, incluyendo experimentación, reproducción y despliegue de modelos.
+This repository contains Machine Learning projects using MLflow to manage model lifecycles, including experimentation, playback, and model deployment.
 
 <p align="center">
   <img src="https://techcommunity.microsoft.com/t5/image/serverpage/image-id/420557i0319A4181851485A/image-size/original?v=v2&px=-1" width="50%">
@@ -25,3 +25,16 @@ MLflow, at its core, provides a suite of tools aimed at simplifying the ML workf
 - **Recipes**: Serving as a guide for structuring ML projects, Recipes, while offering recommendations, are focused on ensuring functional end results optimized for real-world deployment scenarios.
 
 - **Projects**: MLflow Projects standardize the packaging of ML code, workflows, and artifacts, akin to an executable. Each project, be it a directory with code or a Git repository, employs a descriptor or convention to define its dependencies and execution method.
+
+## Why Use MLflow?
+The machine learning (ML) process is intricate, comprising various stages, from data preprocessing to model deployment and monitoring. Ensuring productivity and efficiency throughout this lifecycle poses several challenges:
+
+- **Experiment Management**: It’s tough to keep track of the myriad experiments, especially when working with files or interactive notebooks. Determining which combination of data, code, and parameters led to a particular result can become a daunting task.
+
+- **Reproducibility**: Ensuring consistent results across runs is not trivial. Beyond just tracking code versions and parameters, capturing the entire environment, including library dependencies, is critical. This becomes even more challenging when collaborating with other data scientists or when scaling the code to different platforms.
+
+- **Deployment Consistency**: With the plethora of ML libraries available, there’s often no standardized way to package and deploy models. Custom solutions can lead to inconsistencies, and the crucial link between a model and the code and parameters that produced it might be lost.
+
+- **Model Management**: As data science teams produce numerous models, managing, testing, and continuously deploying these models becomes a significant hurdle. Without a centralized platform, managing model lifecycles becomes unwieldy.
+
+- **Library Agnosticism**: While individual ML libraries might offer solutions to some of the challenges, achieving the best results often involves experimenting across multiple libraries. A platform that offers compatibility with various libraries while ensuring models are usable as reproducible “black boxes” is essential.
